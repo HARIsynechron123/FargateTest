@@ -31,5 +31,5 @@ func TestTerraformAwsFargateExample(t *testing.T) {
 	clustname := terraform.Output(t, terraformOptions, "fargate")
 	
 	fmt.Printf("%q",clustname)
-	assert.Contains(t, string(clustname), "example-ecs-clusterrtuhggh")
+	assert.Contains(t, string(clustname), "example-ecs-cluster")
 }
